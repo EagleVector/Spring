@@ -42,9 +42,9 @@ import org.springframework.context.annotation.Primary;
 //        return 9;
 //    }
 //}
-@Configuration
-@ComponentScan(basePackages = "com.example.beans")
-public class ProjectConfig {
+//@Configuration
+//@ComponentScan(basePackages = "com.example.beans")
+//public class ProjectConfig {
 //    @Bean
 //    public Vehicle vehicle() {
 //        Vehicle vehicle = new Vehicle();
@@ -59,4 +59,34 @@ public class ProjectConfig {
 //        person.setVehicle(vehicle());
 //        return person;
 //    }
+//    @Bean
+//    Vehicle vehicle1() {
+//        var veh = new Vehicle();
+//        veh.setName("Honda");
+//        return veh;
+//    }
+//
+//    @Bean
+//    Vehicle vehicle2() {
+//        var veh = new Vehicle();
+//        veh.setName("Audi");
+//        return veh;
+//    }
+//
+//    @Bean
+//    @Primary
+//    Vehicle vehicle3() {
+//        var veh = new Vehicle();
+//        veh.setName("BMW");
+//        return veh;
+//    }
+//}
+
+@Configuration
+@ComponentScan(basePackages = {"com.example.implementations",
+        "com.example.services"})
+@ComponentScan(basePackageClasses = {com.example.beans.Vehicle.class,
+        com.example.beans.Person.class})
+public class ProjectConfig {
+
 }

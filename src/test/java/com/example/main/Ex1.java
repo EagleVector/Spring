@@ -3,6 +3,7 @@ package com.example.main;
 import com.example.beans.Person;
 import com.example.beans.Vehicle;
 import com.example.config.ProjectConfig;
+import com.example.config.ProjectConfig;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -15,13 +16,13 @@ public class Ex1 {
 //        vehicle.setName("Mercedes Benz");
 //        System.out.println("Vehicle Name: " + vehicle.getName());
 
-        var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
-        Person person = context.getBean(Person.class);
-        Vehicle vehicle = context.getBean(Vehicle.class);
-
-        System.out.println("Person Name from Spring Context: " + person.getName());
-        System.out.println("Vehicle name from Spring Context: " + vehicle.getName());
-        System.out.println("Vehicle that person owns: " + person.getVehicle());
+//        var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
+//        Person person = context.getBean(Person.class);
+//        Vehicle vehicle = context.getBean(Vehicle.class);
+//
+//        System.out.println("Person Name from Spring Context: " + person.getName());
+//        System.out.println("Vehicle name from Spring Context: " + vehicle.getName());
+//        System.out.println("Vehicle that person owns: " + person.getVehicle());
 
         // NoUniqueBeanDefinitionException: Multiple Beans with same data type
         // Handle bean with name param
@@ -79,5 +80,8 @@ public class Ex1 {
 //        } else {
 //            System.out.println("Programming Vehicle Name for Spring Context is: " + audiVehicle.getName());
 //        }
+
+        var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
+
     }
 }
