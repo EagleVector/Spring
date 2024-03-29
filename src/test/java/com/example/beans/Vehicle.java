@@ -6,6 +6,10 @@ import org.springframework.stereotype.Component;
 
 //@Component
 public class Vehicle {
+
+    public Vehicle() {
+        System.out.println("Vehicle has been created");
+    }
     private String name;
 
     public String getName() {
@@ -28,5 +32,10 @@ public class Vehicle {
 
     public void printHello() {
         System.out.println("Printing Hello From Vehicle Bean");
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicle name is: " + name;
     }
 }
