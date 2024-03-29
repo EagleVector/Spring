@@ -42,22 +42,21 @@ import org.springframework.context.annotation.Primary;
 //        return 9;
 //    }
 //}
-
-//@ComponentScan(basePackages = "com.example.beans")
 @Configuration
+@ComponentScan(basePackages = "com.example.beans")
 public class ProjectConfig {
-    @Bean
-    public Vehicle vehicle() {
-        Vehicle vehicle = new Vehicle();
-        vehicle.setName("Toyota");
-        return vehicle;
-    }
-
-    @Bean
-    public Person person(Vehicle vehicle) {
-        Person person = new Person();
-        person.setName("Lucy");
-        person.setVehicle(vehicle());
-        return person;
-    }
+//    @Bean
+//    public Vehicle vehicle() {
+//        Vehicle vehicle = new Vehicle();
+//        vehicle.setName("Toyota");
+//        return vehicle;
+//    }
+//
+//    @Bean
+//    public Person person(Vehicle vehicle) {
+//        Person person = new Person();
+//        person.setName("Lucy");
+//        person.setVehicle(vehicle());
+//        return person;
+//    }
 }
