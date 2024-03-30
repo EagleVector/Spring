@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6eadd459-719c-4ec1-b0fd-056e990a84ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/model/Song.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/aspects/LoggerAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/aspects/VehicleStartCheckAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/interfaces/LogAspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/implementation/BoseSpeakers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/implementation/BoseSpeakers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/implementation/BridgeStoneTyres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/implementation/BridgeStoneTyres.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/implementation/MichelinTyres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/implementation/MichelinTyres.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/implementation/SonySpeakers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/implementation/SonySpeakers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/interfaces/Speakers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/interfaces/Speakers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/interfaces/Tyres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/interfaces/Tyres.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/config/ProjectConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/config/ProjectConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/main/Ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/main/Ex1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/services/VehicleServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/services/VehicleServices.java" afterDir="false" />
     </list>
@@ -26,6 +24,7 @@
       <list>
         <option value="AnnotationType" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>

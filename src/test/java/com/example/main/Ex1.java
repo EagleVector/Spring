@@ -41,7 +41,7 @@ public class Ex1 {
 //        System.out.println("Integer value from Context is: " + num);
 
 //        Vehicle volkswagen = new Vehicle();
-//        volkswagen.setName("VolksWagen");
+//        volkswagen.setName("Volkswagen");
 //        Supplier<Vehicle> volkswagenSupplier = () -> volkswagen;
 //
 //        Supplier<Vehicle> audiSupplier = () -> {
@@ -62,11 +62,11 @@ public class Ex1 {
 //            context.registerBean("audi", Vehicle.class, audiSupplier);
 //        }
 //
-//        Vehicle volksVehicle = null;
+//        Vehicle volkswagenVehicle = null;
 //        Vehicle audiVehicle = null;
 
 //        try {
-//            volksVehicle = context.getBean("volkswagen", Vehicle.class);
+//            volkswagenVehicle = context.getBean("volkswagen", Vehicle.class);
 //        } catch (NoSuchBeanDefinitionException noSuchBeanDefinitionException) {
 //            System.out.println("Error while creating Volkswagen vehicle");
 //        }
@@ -106,7 +106,7 @@ public class Ex1 {
         Song song = new Song();
         song.setTitle("Anyone");
         song.setSingerName("Justin Bieber");
-        boolean vehicleStarted = false;
+        boolean vehicleStarted = true;
         String moveVehicleStatus = vehicleServices.moveVehicle(vehicleStarted);
         String playMusicStatus = vehicleServices.playMusic(vehicleStarted, song);
         String applyBrakeStatus = vehicleServices.applyBrake(vehicleStarted);
