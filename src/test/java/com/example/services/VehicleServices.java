@@ -3,15 +3,16 @@ package com.example.services;
 import com.example.interfaces.Speakers;
 import com.example.interfaces.Tyres;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class VehicleServices {
     @Autowired
-    private Speakers speaker;
-
+    private Speakers speakers;
     private Tyres tyres;
 
     public void playMusic() {
-        String music = speaker.makeSound();
+        String music = speakers.makeSound();
         System.out.println(music);
     }
 
@@ -20,12 +21,12 @@ public class VehicleServices {
         System.out.println(status);
     }
 
-    public Speakers getSpeaker() {
-        return speaker;
+    public Speakers getSpeakers() {
+        return speakers;
     }
 
-    public void setSpeaker(Speakers speaker) {
-        this.speaker = speaker;
+    public void setSpeakers(Speakers speaker) {
+        this.speakers = speakers;
     }
 
     public Tyres getTyres() {
@@ -36,6 +37,4 @@ public class VehicleServices {
     public void setTyres(Tyres tyres) {
         this.tyres = tyres;
     }
-
-
 }

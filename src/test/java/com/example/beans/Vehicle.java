@@ -54,6 +54,16 @@ import org.springframework.stereotype.Component;
 //}
 @Component(value = "vehicleBean")
 public class Vehicle {
+
+    private String name = "Honda";
+
+    private final VehicleServices vehicleServices;
+
+    @Autowired
+    public Vehicle(VehicleServices vehicleServices) {
+        System.out.println("Vehicle Bean Created by Spring");
+        this.vehicleServices = vehicleServices;
+    }
     public String getName() {
         return name;
     }
@@ -71,13 +81,4 @@ public class Vehicle {
         return "Vehicle name is: " + name;
     }
 
-    private String name = "Honda";
-
-    private final VehicleServices vehicleServices;
-
-    @Autowired
-    public Vehicle(VehicleServices vehicleServices) {
-        System.out.println("Vehicle Bean Created by Spring");
-        this.vehicleServices = vehicleServices;
-    }
 }

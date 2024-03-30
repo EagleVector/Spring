@@ -83,7 +83,7 @@ import org.springframework.context.annotation.Primary;
 //}
 
 @Configuration
-@ComponentScan(basePackages = {"com.example.implementations",
+@ComponentScan(basePackages = {"com.example.implementation",
         "com.example.services"})
 @ComponentScan(basePackageClasses = {com.example.beans.Vehicle.class,
         com.example.beans.Person.class})

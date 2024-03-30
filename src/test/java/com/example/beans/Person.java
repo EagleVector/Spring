@@ -41,8 +41,19 @@ import org.springframework.stereotype.Component;
 //        this.vehicle = vehicle;
 //    }
 //}
+
+// Custom component name
 @Component(value = "personBean")
 public class Person {
+
+    private String name = "Lucy";
+    private final Vehicle vehicle;
+
+    @Autowired
+    public Person(Vehicle vehicle) {
+        System.out.println("Person bean Created by Spring");
+        this.vehicle = vehicle;
+    }
     public String getName() {
         return name;
     }
@@ -55,12 +66,5 @@ public class Person {
         return vehicle;
     }
 
-    private String name = "Lucy";
-    private final Vehicle vehicle;
 
-    @Autowired
-    public Person(Vehicle vehicle) {
-        System.out.println("Person bean Created by Spring");
-        this.vehicle = vehicle;
-    }
 }
