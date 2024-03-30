@@ -4,6 +4,7 @@ import com.example.beans.Person;
 import com.example.beans.Vehicle;
 import com.example.config.ProjectConfig;
 import com.example.config.ProjectConfig;
+import com.example.model.Song;
 import com.example.services.VehicleServices;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -99,6 +100,16 @@ public class Ex1 {
 //        System.out.println("Before");
 //        Person person = context.getBean(Person.class);
 //        System.out.println("After");
+
+        var vehicleServices = context.getBean(VehicleServices.class);
+        System.out.println(vehicleServices.getClass());
+        Song song = new Song();
+        song.setTitle("Anyone");
+        song.setSingerName("Justin Bieber");
+        boolean vehicleStarted = false;
+        String moveVehicleStatus = vehicleServices.moveVehicle(vehicleStarted);
+        String playMusicStatus = vehicleServices.playMusic(vehicleStarted, song);
+        String applyBrakeStatus = vehicleServices.applyBrake(vehicleStarted);
 
     }
 }
