@@ -4,6 +4,7 @@ import com.example.beans.Person;
 import com.example.beans.Vehicle;
 import com.example.config.ProjectConfig;
 import com.example.config.ProjectConfig;
+import com.example.services.VehicleServices;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -82,11 +83,22 @@ public class Ex1 {
 //        }
 
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
-        String[] persons = context.getBeanNamesForType(Person.class);
-        Person person = context.getBean(Person.class);
-        String[] names = context.getBeanNamesForType(Vehicle.class);
-        Vehicle vehicle = context.getBean(Vehicle.class);
-        vehicle.getVehicleServices().playMusic();
-        vehicle.getVehicleServices().moveVehicle();
+//        String[] persons = context.getBeanNamesForType(Person.class);
+//        Person person = context.getBean(Person.class);
+//        String[] names = context.getBeanNamesForType(Vehicle.class);
+//        Vehicle vehicle = context.getBean(Vehicle.class);
+//        vehicle.getVehicleServices().playMusic();
+//        vehicle.getVehicleServices().moveVehicle();
+//        VehicleServices vehicleServices1 = context.getBean(VehicleServices.class);
+//        VehicleServices vehicleServices2 = context.getBean(VehicleServices.class);
+//        System.out.println(vehicleServices1.hashCode());
+//        System.out.println(vehicleServices2.hashCode());
+//        if (vehicleServices1.hashCode() != vehicleServices2.hashCode()) {
+//            System.out.println("Multiple object instances created");
+//        }
+//        System.out.println("Before");
+//        Person person = context.getBean(Person.class);
+//        System.out.println("After");
+
     }
 }

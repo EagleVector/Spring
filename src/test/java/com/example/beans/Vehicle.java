@@ -61,7 +61,7 @@ public class Vehicle {
 
     @Autowired
     public Vehicle(VehicleServices vehicleServices) {
-        System.out.println("Vehicle Bean Created by Spring");
+//        System.out.println("Vehicle Bean Created by Spring");
         this.vehicleServices = vehicleServices;
     }
     public String getName() {
